@@ -23,7 +23,7 @@ const Hero = () => {
       <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <HeroContent>
-        <HeroItems>
+        <HeroItems>         
           <HeroH1>La Calle</HeroH1>
           <HeroH2>Gourmet</HeroH2>
           <HeroP>El Bajon Necesario &#128523;</HeroP>

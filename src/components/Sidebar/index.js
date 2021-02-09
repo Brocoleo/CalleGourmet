@@ -1,4 +1,5 @@
 import React from 'react';
+import {BrowserRouter as Router} from 'react-router-dom';
 import {
   SidebarContainer,
   Icon,
@@ -15,11 +16,13 @@ const Sidebar = ({ isOpen, toggle }) => {
       <Icon onClick={toggle}>
         <CloseIcon />
       </Icon>
+      <Router>
       <SidebarMenu>
         <SidebarLink to='/'>Hamburgesas</SidebarLink>
         <SidebarLink to='/'>Chahuarmas</SidebarLink>
         <SidebarLink to='/'>Menu Completo</SidebarLink>
       </SidebarMenu>
+      </Router>
       <SideBtnWrap>
         <SidebarRoute to='/'>Pedir Ya</SidebarRoute>
       </SideBtnWrap>
