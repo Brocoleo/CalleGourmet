@@ -1,7 +1,9 @@
 {
-  "name": "e_commerce",
-  "version": "0.1.0",
-  "private": true,
+  "name": "react-calle-gourmet",
+  "version": "1.0",
+  "engines": {
+    "node": "14.x"
+  },
   "dependencies": {
     "@chec/commerce.js": "^2.3.1",
     "@material-ui/core": "^4.11.3",

@@ -33,4 +33,4 @@ const Navbar = ({totalItems}) => {
     )
 }
 
-export default Navbar
+export default Navbar;
