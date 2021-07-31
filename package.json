@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "private":"true",
   "engines": {
-    "node": "14.x"
+    "node": "14.16.0"
   },
   "dependencies": {
     "@chec/commerce.js": "^2.3.1",
@@ -37,8 +37,8 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "start": "node index.js",
+    "build": "webpack"
   },
   "eslintConfig": {
     "extends": [
