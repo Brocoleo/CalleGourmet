@@ -38,10 +38,11 @@ const  Product = ({ product, onAddToCart}) => {
             <ProductImg  src={product.media.source} title={product.name}  />
             <ProductInfo>                
                     <ProductTitle gutterBottom variant="h5">{product.name}        </ProductTitle>
-                    <ProductPrice gutterBottom variant="h5">{product.price.formatted_with_symbol}</ProductPrice>                             
-                    <ProductDesc dangerouslySetInnerHTML={{__html: product.description}}  variant="body2" color="textSecondary" />             
+                    <ProductPrice gutterBottom variant="h5">{product.price.formatted_with_symbol}</ProductPrice>          
+                    <ProductButton aria-label="Add to Cart" onClick={handleClick}>Agregar</ProductButton>                   
+                               
                     <div>
-                    <ProductButton aria-label="Add to Cart" onClick={handleClick}>Agregar</ProductButton>
+                    <ProductDesc dangerouslySetInnerHTML={{__html: product.description}}  variant="body2" color="textSecondary" />  
                     <Snackbar
                         anchorOrigin={{
                         vertical: 'bottom',
