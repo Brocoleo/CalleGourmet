@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { GlobalStyle } from './globalStyles';
-import { Navbar, Products, Cart , Checkout, Hero, Footer, AboutUs, Ready, Login, Orders} from './components';
+import { NavBar, Products, Cart , Checkout, Hero, Footer, AboutUs, Ready, Login, Orders} from './components';
 import { commerce } from './lib/commerce';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
@@ -52,7 +52,7 @@ const App = () => {
     <Router>
       <GlobalStyle />
         <div>
-        <Navbar totalItems={cart.total_items}/>
+        <NavBar totalItems={cart.total_items}/>
         
         <Switch>    
 
