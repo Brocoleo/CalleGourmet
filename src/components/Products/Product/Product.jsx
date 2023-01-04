@@ -16,7 +16,7 @@ import {
   
 
 const  Product = ({ product, onAddToCart}) => {
-
+console.log(product)
   const [open, setOpen] = React.useState(false);
 
   const handleClick = () => {

@@ -34,6 +34,7 @@ const ActionButton = withStyles((theme) => ({
 
 export default function CarroItem({ item, onUpdateCartQty, onRemoveFromCart }) {
   const classes = useStyles();
+  console.log(item)
 
   return (
     <div className={classes.root}>

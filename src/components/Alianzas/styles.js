@@ -1,18 +1,19 @@
 import styled from 'styled-components';
-import ImgBg from '../../images/imagen-fondo.jpg';
+import ImgBg from '../../assets/img/alianzas.png';
 
 export const HeroContainer = styled.div`
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
-    url(${ImgBg});
-  height: 100vh;
-  background-position: center;
-  background-size: cover;
+    background: url(${ImgBg});
+    height: 1188;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #000;
 `;
 
 export const HeroContent = styled.div`
-  height: calc(100vh - 80px);
+  height: 100%;
   max-height: 100%;
-  padding: 0rem calc((100vw - 1300px) / 2);
+
 `;
 
 export const HeroItems = styled.div`
@@ -34,14 +35,14 @@ export const HeroItems = styled.div`
 `;
 
 export const HeroH1 = styled.h1`
-  font-size: clamp(4rem, 10vw, 6rem);
+  font-size: clamp(3rem, 9vw, 5rem);
   margin-bottom: 1rem;
   letter-spacing: 2px;
 `;
 
 export const HeroH2 = styled.h2`
   color: #e9ba23; 
-  font-size: clamp(4rem, 10vw, 6rem);
+  font-size: clamp(3rem, 9vw, 5rem);
   margin-bottom: 1rem;
   letter-spacing: 2px;
 

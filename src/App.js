@@ -3,6 +3,8 @@ import { GlobalStyle } from './globalStyles';
 import { NavBar, Products, Cart , Checkout, Hero, Footer, AboutUs, Ready, Login, Orders} from './components';
 import { commerce } from './lib/commerce';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import Eventos from './components/Eventos/Eventos';
+import Alianzas from './components/Alianzas/Alianzas';
 
 const App = () => {
   const [products, setProducts] = useState([]);
@@ -59,6 +61,8 @@ const App = () => {
           <Route exact path="/">
             <Hero />
             <Products heading='Menu' products={products} onAddToCart={handleAddToCart}/>
+            <Eventos />
+            <Alianzas />
             <Footer />
           </Route>
 

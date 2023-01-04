@@ -1,14 +1,12 @@
 import styled from 'styled-components';
-import ImgBg from '../../assets/img/imagen-fondo.jpg';
+import ImgBg from '../../assets/img/eventos.png';
 
 export const HeroContainer = styled.div`
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
-    url(${ImgBg});
+    background: url(${ImgBg});
     height: 1188;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    margin-top:80px;
     background-color: #221e1e;
 `;
 
